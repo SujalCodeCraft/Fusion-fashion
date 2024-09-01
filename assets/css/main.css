@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.home-main-nav .home-main-nav {
+  background-color: #efebf0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.home-main-nav .home-main-nav .logo-box img {
+  max-width: 100px;
+  transform: scale(1.5);
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul li {
+  padding: 0.4rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul li i {
+  font-size: 12px;
+  font-weight: bold;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul li:hover {
+  background-color: lightpink;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul li:hover i {
+  transform: rotate(360deg);
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul .drop-down-li:hover .visible-on-hover {
+  display: block;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul .drop-down-li .visible-on-hover {
+  display: none;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul .drop-down-li .visible-on-hover .home-nav-middle-li-dropdown {
+  background-color: #efebf0;
+  transition: all 1s ease;
+  position: absolute;
+  top: 4rem;
+  z-index: 9;
+  border-bottom: 1px solid black;
+  width: 100%;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul .drop-down-li .visible-on-hover .home-nav-middle-li-dropdown ul {
+  list-style-type: none;
+}
+.home-main-nav .home-main-nav .right-box ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style-type: none;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.home-main-nav .home-main-nav .right-box .offcanvas .offcanvas-header {
+  padding: 5px 1rem;
+  border-bottom: 1px solid grey;
+}
+.home-main-nav .home-main-nav a {
+  text-decoration: none;
+  color: black;
+}
+.home-main-nav .mobile-menu {
+  display: none;
+}
+
+.yours-vibes-main {
+  background-color: #efebf0;
+  padding: 2rem 1rem;
+}
+.yours-vibes-main .first-heading {
+  padding: 3rem;
+}
+.yours-vibes-main .first-heading h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Baskervville SC", system-ui;
+  text-align: center;
+  color: #1086ae;
+}
+.yours-vibes-main .images-section-vibe {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.yours-vibes-main .images-section-vibe a {
+  text-decoration: none;
+  color: black;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main {
+  height: 525px;
+  width: 393px;
+  transition: all 0.2 ease;
+  overflow: hidden;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main:hover img {
+  transform: scale(1.1);
+  filter: opacity(80%);
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main img {
+  transition: all 0.5s ease;
+  height: 525px;
+  width: 393px;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  padding-left: 2px;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text:hover {
+  background-color: rgba(128, 128, 128, 0.071);
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text:hover i {
+  transform: translate(20px) scale(1.2);
+  color: #FF8F00;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-family: "Baskervville SC", system-ui;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text p i {
+  transition: all 0.4s ease-in-out;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text .vibe-text-1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #FF8F00;
+}
+
+.new-arrival-section-main {
+  background-color: #d0cabc;
+  padding: 3rem 0.5rem;
+  max-height: 100vh;
+}
+.new-arrival-section-main .new-arrival-heading {
+  text-align: center;
+  padding: 2rem;
+}
+.new-arrival-section-main .new-arrival-heading h2 {
+  font-size: 3.5rem;
+  font-family: "Baskervville SC", system-ui;
+  font-weight: 600;
+  color: #1086ae;
+}
+.new-arrival-section-main .new-arriv-main-row {
+  display: flex;
+  gap: 2rem;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box {
+  position: relative;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .heart-icon {
+  right: 1.2rem;
+  text-align: end;
+  position: absolute;
+  top: 1rem;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .heart-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .new-arriv-img-text-box {
+  padding: 1rem;
+  padding-left: 0;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .new-arriv-img-text-box p {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .new-arriv-img-text-box p .buy-now-btn {
+  padding: 2px 0.8rem;
+  border-radius: 1rem;
+  font-size: 14px;
+  border: 1px solid black;
+  font-weight: 600;
+  background-color: white;
+  margin-left: 2rem;
+}
+
+.star-section-main {
+  padding: 3rem 0.5rem;
+}
+.star-section-main .wedding-edit-heading-main {
+  padding: 2rem;
+}
+.star-section-main .wedding-edit-heading-main h2 {
+  font-family: "Baskervville SC", system-ui;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+.star-section-main .wedding-edit-main-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.star-section-main .wedding-edit-main-row .wedding-edit-main-box .edit-container .img-box-main {
+  max-width: 280px;
+  max-height: 350px;
+  min-width: 260px;
+  min-height: 300px;
+  overflow: hidden;
+}
+.star-section-main .wedding-edit-main-row .wedding-edit-main-box .edit-container .img-box-main img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.star-section-main .wedding-edit-main-row .wedding-edit-main-box .edit-container .text-box-main {
+  text-align: center;
+}
+.star-section-main .wedding-edit-main-row .wedding-edit-main-box .edit-container .text-box-main p {
+  margin-bottom: 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Baskervville SC", system-ui;
+}
+
+.kids-collection-main {
+  border-color: #d0cabc;
+}
+.kids-collection-main img {
+  max-height: 80vh;
+  width: 100%;
+}
+.kids-collection-main button {
+  position: relative;
+  bottom: 5rem;
+  left: 40%;
+  padding: 0.3rem 2rem;
+  border-radius: 1rem;
+  background-color: goldenrod;
+  border: none;
+}
+
+.call-section-main {
+  background-color: #d0cabc;
+  position: relative;
+  top: -3rem;
+  padding: 4rem 0rem;
+}
+.call-section-main .call-text-main {
+  padding: 4rem 3rem;
+}
+.call-section-main .call-text-main .call-text-1 {
+  font-size: 4rem;
+  font-family: "Baskervville SC", system-ui;
+  font-weight: 600;
+}
+.call-section-main .call-text-main .call-text-2 {
+  font-weight: 500;
+}
+.call-section-main .call-text-main button {
+  margin: 2rem;
+  width: 100%;
+  margin-left: 0;
+  background-color: goldenrod;
+  border: none;
+}
+.call-section-main .call-section-main-img {
+  height: 100%;
+  text-align: center;
+}
+.call-section-main .call-section-main-img img {
+  width: 100%;
+}
+
+.home-footer-main {
+  position: relative;
+}
+.home-footer-main .suscribe-box-main {
+  align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.home-footer-main .suscribe-box-main p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.home-footer-main .suscribe-box-main input {
+  padding-left: 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.home-footer-main .footer-main-row {
+  display: flex;
+  justify-content: space-between;
+}
+.home-footer-main .footer-main-row .footer-main-column {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2rem;
+  min-width: 20%;
+}
+.home-footer-main .footer-main-row .footer-main-column ul {
+  list-style-type: none;
+}
+.home-footer-main .footer-main-row .footer-main-column ul li {
+  padding: 5px;
+}
+.home-footer-main .footer-main-row .footer-main-column .footer-column-first-li {
+  padding: 1rem 0rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+.home-footer-main .footer-bottom-row {
+  padding: 0.5rem;
+}
+.home-footer-main .footer-bottom-row p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .home-main-nav .home-main-nav .middle-box {
+    display: none;
+  }
+  .home-main-nav .home-main-nav .right-box {
+    display: none;
+  }
+  .home-main-nav .mobile-menu {
+    display: block;
+  }
+  .yours-vibes-main {
+    padding: 0rem;
+  }
+  .yours-vibes-main .first-heading {
+    padding: 0rem;
+  }
+  .yours-vibes-main .images-section-vibe {
+    flex-wrap: wrap;
+  }
+  .yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main img {
+    height: auto;
+    width: 250px;
+  }
+  .yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main {
+    height: auto;
+    width: 250px;
+  }
+  .new-arrival-section-main .new-arriv-main-row {
+    flex-wrap: wrap;
+  }
+  .star-section-main .wedding-edit-main-row {
+    flex-wrap: wrap;
+  }
+  .call-section-main .call-text-main {
+    padding: 0;
+  }
+  .call-section-main .call-text-main .call-text-1 {
+    font-size: 2.1rem;
+  }
+  .home-footer-main .footer-main-row {
+    flex-wrap: wrap;
+  }
+  html {
+    overflow-x: hidden;
+  }
+}/*# sourceMappingURL=main.css.map */
