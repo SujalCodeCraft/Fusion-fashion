@@ -257,16 +257,36 @@
             </div>
             <div class="right-box">
                 <ul>
-                    <li><a href="#"><span><i class="fa-solid fa-cart-shopping"></i></span></a></li>
-                    <li><a href="#"><span><i class="fa-solid fa-user"></i></span></a></li>
-                    <li><a href="#"><span><i class="fa-solid fa-bell"></i></span></a></li>
-                    <li><a href="#"><span><i class="fa-solid fa-bag-shopping"></i></span></a></li>
-                    <li>
-                        <a href="#"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight">
-                            <span><i class="fa-solid fa-bars" ></i></span>
+                    <li class="nav-right-li nav-right-first-li">
+                        <a href="index.html" aria-label="Cart">
+                            <span><i class="fa-solid fa-cart-shopping"></i></span>
                         </a>
                     </li>
+
+
+                    <li class="nav-right-li nav-right-first-li">
+                        <a href="#" aria-label="User Profile">
+                            <span><i class="fa-solid fa-user"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-right-li nav-right-first-li">
+                        <a href="#" aria-label="Notifications">
+                            <span><i class="fa-solid fa-bell"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-right-li nav-right-first-li">
+                        <a href="#" aria-label="Shopping Bag">
+                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-right-li nav-right-last-li">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight" aria-label="Menu">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </a>
+                    </li>
+
+
                 </ul>
 
 
@@ -274,7 +294,8 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
-                        <img src="assets/image/logo/new-logo.png" width="150" class="img-fluid" alt="Fusion Fashion Logo">
+                        <img src="assets/image/logo/new-logo.png" width="150" class="img-fluid"
+                            alt="Fusion Fashion Logo">
 
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
@@ -327,22 +348,7 @@
 
             </div>
             <!-- main mobile menu  -->
-            <div class="mobile-menu">
-                <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"></i>
 
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        ...
-                    </div>
-                </div>
-            </div>
         </nav>
     </header>
     <!-- sliders section   -->
@@ -367,7 +373,7 @@
             </div>
         </div> <!-- Closing div added here -->
     </section>
-    
+
     <!-- your vibe section  -->
     <section class="yours-vibes-main">
         <div class="container">
@@ -423,6 +429,21 @@
                     <h2>
                         New Arrivals
                     </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 arrival-ul">
+                    <ul>
+                        <li class="arrival-first-li">
+                            <a href="#">Mans</a>
+                        </li>
+                        <li class="arrival-sec-li">
+                            <a href="#">Womens</a>
+                        </li>
+                        <li class="arrival-third-li">
+                            <a href="#">Kids</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="row">

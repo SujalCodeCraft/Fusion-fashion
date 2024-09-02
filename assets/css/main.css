@@ -7,6 +7,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body a {
+  text-decoration: none;
+  color: black;
+}
+
 .home-main-nav .home-main-nav {
   background-color: #efebf0;
   display: flex;
@@ -153,7 +158,6 @@
 .new-arrival-section-main {
   background-color: #d0cabc;
   padding: 3rem 0.5rem;
-  max-height: 100vh;
 }
 .new-arrival-section-main .new-arrival-heading {
   text-align: center;
@@ -164,6 +168,32 @@
   font-family: "Baskervville SC", system-ui;
   font-weight: 600;
   color: #1086ae;
+}
+.new-arrival-section-main .hidden {
+  display: none;
+}
+.new-arrival-section-main .new-arrival-main-new-row {
+  display: flex;
+  flex-direction: row;
+}
+.new-arrival-section-main .arrival-ul ul {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  list-style-type: none;
+}
+.new-arrival-section-main .arrival-ul ul li {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s ease;
+}
+.new-arrival-section-main .arrival-ul ul li:hover {
+  border-bottom: 3px solid black;
+}
+.new-arrival-section-main .arrival-ul ul .arrival-first-li:focus .new-arriv-main-row {
+  display: none;
 }
 .new-arrival-section-main .new-arriv-main-row {
   display: flex;
@@ -290,6 +320,7 @@
 
 .home-footer-main {
   position: relative;
+  background-color: #efebf0;
 }
 .home-footer-main .suscribe-box-main {
   align-items: center;
@@ -343,8 +374,11 @@
   .home-main-nav .home-main-nav .middle-box {
     display: none;
   }
-  .home-main-nav .home-main-nav .right-box {
+  .home-main-nav .home-main-nav .right-box .nav-right-li {
     display: none;
+  }
+  .home-main-nav .home-main-nav .right-box .nav-right-last-li {
+    display: block !important;
   }
   .home-main-nav .mobile-menu {
     display: block;
@@ -383,5 +417,18 @@
   }
   html {
     overflow-x: hidden;
+  }
+  .home-main-nav .home-main-nav .logo-box img {
+    transform: none;
+    max-height: 100px;
+  }
+  .new-arrival-section-main .arrival-ul {
+    gap: 2rem;
+  }
+  .new-arrival-section-main {
+    padding: 2rem 0.5rem;
+  }
+  .home-footer-main .suscribe-box-main p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
